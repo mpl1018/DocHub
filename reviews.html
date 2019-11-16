@@ -12,28 +12,32 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
      <!-- <link rel="stylesheet" href="css/styles.css"> -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+     <script src="js/component.js"></script>
      <script src="js/tools.js"> </script>
-     <link rel="import" href="component/header.html" id="header">
 </head>
 <body>
-    <iframe align="center" width="100%" src="component/header.html"  frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    <div id="header"></div>
+    <script>
+        $("#header").html(headerHTML)
+    </script>
     <div id="content"></div>
     <script>
-        var reviews = request_api(dochub_api+"reviews",null,"GET")
+        var reviews = request_api(dochub_api+"reviews/",null,"GET")
         var content = $("#content")
-        // for(review in reviews){
-        //     var review_box = `
-        //     <div class="col s2">
-        //       <div class="card blue darken-1">
-        //         <div class="card-content white-text">
-        //           <span class="card-title">Rewiew Case id: ${review.id}</span>
-        //         </div>
-        //         <div class="card-action">
-        //           <a href="review.html" class="white-text" onclick="localStorage.setItem('currentID', '')">See review progress</a>
-        //         </div>
-        //       </div>
-        //     </div>
-        //     `
-        // }
+        for(review in reviews){
+            console.log(review.id)
+            // var review_box = `
+            // <div class="col s2">
+            //   <div class="card blue darken-1">
+            //     <div class="card-content white-text">
+            //       <span class="card-title">Rewiew Case id: ${review.id}</span>
+            //     </div>
+            //     <div class="card-action">
+            //       <a href="review.html" class="white-text" onclick="localStorage.setItem('currentID', '')">See review progress</a>
+            //     </div>
+            //   </div>
+            // </div>
+            // `
+        }
     </script>
 </body>

@@ -11,10 +11,16 @@
     <!-- Compiled and minified CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
      <!-- <link rel="stylesheet" href="css/styles.css"> -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+     <script src="js/component.js"></script>
+     <script src="js/tools.js"> </script>
 </head>
 <body>
 
-    <iframe align="center" width="100%" src="component/header.html"  frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+        <div id="header"></div>
+        <script>
+            $("#header").html(headerHTML)
+        </script>
 
     <section>  
             <div class="row" id = "patients_col">
@@ -33,7 +39,6 @@
         var instances = M.Dropdown.init(elems);
     });
     </script>
-    <script src="js/tools.js"></script>
     <script src="js/patients_f.js"></script>
 
 </body>
