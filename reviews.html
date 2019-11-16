@@ -17,4 +17,23 @@
 </head>
 <body>
     <iframe align="center" width="100%" src="component/header.html"  frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    <div id="content"></div>
+    <script>
+        var reviews = request_api(dochub_api+"reviews",null,"GET")
+        var content = $("#content")
+        // for(review in reviews){
+        //     var review_box = `
+        //     <div class="col s2">
+        //       <div class="card blue darken-1">
+        //         <div class="card-content white-text">
+        //           <span class="card-title">Rewiew Case id: ${review.id}</span>
+        //         </div>
+        //         <div class="card-action">
+        //           <a href="review.html" class="white-text" onclick="localStorage.setItem('currentID', '')">See review progress</a>
+        //         </div>
+        //       </div>
+        //     </div>
+        //     `
+        // }
+    </script>
 </body>

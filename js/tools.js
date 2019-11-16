@@ -9,7 +9,6 @@ function request_api(url, data, method){
         "method": method,
         "headers": {
           "Content-Type": "application/json",
-          "User-Agent": "PostmanRuntime/7.19.0",
           "Accept": "application/json",
         },
         "data": data
