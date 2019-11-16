@@ -16,30 +16,41 @@
      <script src="js/tools.js"> </script>
 </head>
 <body>
-
+  
         <div id="header"></div>
         <script>
             $("#header").html(headerHTML)
         </script>
 
     <section>  
-            <div class="row" id = "patients_col">
+        <h4 class="center blue-text text-darken-2">My reviews</h4>
+            <div class="row" id = "review_list">
                 
             </div>
+    </section>
+
+    <section>
+        <h4 class="blue-text text-darken-2">My tasks </h4>
+        <div class="row" id = "helping_list">
+            
+        </div>
     </section>
 
 
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-    // document.addEventListener('DOMContentLoaded', function(){
-    //     M.AutoInit();
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.dropdown-trigger');
-        var instances = M.Dropdown.init(elems);
-    });
-    </script>
+    <!-- <script>
+     document.addEventListener('DOMContentLoaded', function(){
+         M.AutoInit();
+    }
+    </script> -->
     <script src="js/patients_f.js"></script>
+
+    <style>
+        .card .card-title {
+          font-size : 16px;
+        }
+      </style>
 
 </body>
 </html>
