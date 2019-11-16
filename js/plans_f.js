@@ -19,3 +19,8 @@ dd_not_owner.onclick = function () {
 var patientID  = localStorage.getItem('currentID'); 
 var righttopID = document.querySelector('#right_top_id');
 righttopID.innerHTML = "Patient id: " + patientID;
+
+//displaying plan cards
+var plans_col = document.querySelector('#plans_col');
+request_api(varian_api+"patients/Head_Neck",null,"GET");
+
