@@ -24,20 +24,23 @@
     <script>
         var reviews = request_api(dochub_api+"reviews/",null,"GET")
         var content = $("#content")
+        console.log(reviews)
         for(review in reviews){
+            console.log("t")
             console.log(review.id)
-            // var review_box = `
-            // <div class="col s2">
-            //   <div class="card blue darken-1">
-            //     <div class="card-content white-text">
-            //       <span class="card-title">Rewiew Case id: ${review.id}</span>
-            //     </div>
-            //     <div class="card-action">
-            //       <a href="review.html" class="white-text" onclick="localStorage.setItem('currentID', '')">See review progress</a>
-            //     </div>
-            //   </div>
-            // </div>
-            // `
+            var review_box = `
+            <div class="col s2">
+              <div class="card blue darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">Rewiew Case id: ${review.id}</span>
+                </div>
+                <div class="card-action">
+                  <a href="review.html" class="white-text" onclick="localStorage.setItem('currentID', '')">See review progress</a>
+                </div>
+              </div>
+            </div>
+            `
+            content.append(review_box)
         }
     </script>
 </body>

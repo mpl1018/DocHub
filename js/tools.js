@@ -2,8 +2,9 @@ varian_api = "https://junction-planreview.azurewebsites.net/api/"
 dochub_api = "http://18.224.179.145:8000/"
 
 function request_api(url, data, method){
+    var json = null
     $.ajax({
-        "async": true,
+        "async": false,
         "crossDomain": true,
         "url": url,
         "method": method,
@@ -11,8 +12,10 @@ function request_api(url, data, method){
           "Content-Type": "application/json",
           "Accept": "application/json",
         },
-        "data": data
-      }).done(function (response) {
-        console.log(response);
+        "data": data,
+        success: function(data){
+            json = data
+         }
       });
+      return json
 }
