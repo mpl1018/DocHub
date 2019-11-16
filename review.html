@@ -23,23 +23,8 @@
     </script>
     <div id="content"></div>
     <script>
-        var reviews = request_api(dochub_api+"reviews/",null,"GET")
-        var content = $("#content")
-        console.log(reviews)
-        reviews.forEach(review => {
-            var review_box = `
-            <div class="col s2">
-              <div class="card blue darken-1">
-                <div class="card-content white-text">
-                  <span class="card-title">Rewiew Case id: ${review.id}</span>
-                </div>
-                <div class="card-action">
-                  <a href="review.html?id=${review.id}" class="white-text">See review progress</a>
-                </div>
-              </div>
-            </div>
-            `
-            content.append(review_box)
-        });
+        var reviewId = getUrlVars()["id"]
+        var reviewJson = request_api(dochub_api+"reviews/"+reviewId+"/",null,"GET")
+
     </script>
 </body>
