@@ -2,13 +2,12 @@
 var patients_col = document.querySelector('#patients_col');
 
 
-    fetch('https://junction-planreview.azurewebsites.net/api/patients')
+    fetch(varian_api+"patients")
     .then(res => res.json())
     .then(data => {
 
         //display the patients on the cards 
         for (i in data){
-            var b = 0;
             var id = data[i];
             patients_col.innerHTML +=  `
             
@@ -18,12 +17,12 @@ var patients_col = document.querySelector('#patients_col');
                   <span class="card-title">Patient id: ${id}</span>
                 </div>
                 <div class="card-action">
-                  <a href="plans.html" class="white-text" id="${i}">See plans</a>
+                  <a href="plans.html" class="white-text" onclick="localStorage.setItem('currentID', '${id}')">See plans</a>
                 </div>
               </div>
             </div>
             `
-            ++
+            
         }
     })
 
