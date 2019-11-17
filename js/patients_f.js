@@ -31,7 +31,7 @@ var reviews = request_api(dochub_api+"reviews/doctor/2",null,"GET");
                   <p>Patient ID: ${reviews[review].patient_id}</p>
                 </div>
                 <div class="card-action">
-                  <a href="#" class="black-text" onclick="localStorage.setItem('currentReviewID', '')">See finished review</a>
+                  <a href="reviewing.html" class="black-text" onclick="localStorage.setItem('currentReviewID', '')">See finished review</a>
                 </div>
               </div>
             </div>  
@@ -61,7 +61,7 @@ var tasks = request_api(dochub_api+"tasks/doctor/2", null, "GET");
                   <p>Plan ID: ${tasks[task].plan_id}</p>
                 </div>
                 <div class="card-action">
-                  <a href="#" class="white-text" onclick="localStorage.setItem('currentTaskID', '${tasks[task].id}')">See review progress</a>
+                  <a href="plan-editor.html" class="white-text" onclick="localStorage.setItem('currentTaskID', '${tasks[task].id}')">See review progress</a>
                 </div>
               </div>
             </div>  
