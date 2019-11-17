@@ -20,9 +20,9 @@ function organ_c(name){
     </div>  
     <div class="row center-align">
         <div class="col s12 center-align">
-                <div class="col s1 offset-s4 green">Looks good</div>
-                <div class="col s1 yellow">Needs revision</div>
-                <div class="col s1 red">This is a sh**</div>
+                <div class="col s2 offset-s3 green">Looks good</div>
+                <div class="col s2 yellow">Needs revision</div>
+                <div class="col s2 red">This is a sh**</div>
         </div>
     </div>
     `
