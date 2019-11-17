@@ -20,3 +20,34 @@ var headerHTML = '<nav class="nav-wrapper blue darken-4">\
     </ul>\
 </div>\
 </nav>'
+
+
+var review_plan_html = '<div>\
+<div class="sub-title"></div>\
+<table style="width:100%">\
+    <tr>\
+        <th>Doctor</th>\
+        <th>ORGAN CONTOUR</th>\
+        <th>DOSE DEVIATION</th>\
+        <th>GEOMETRIES DEVIATION</th>\
+        <th>MONITOR UNITS</th>\
+        <th>DOSE DISTRIBUTION</th>\
+        <th>CRITICAL ORGAN METRICS</th>\
+        <th>OPTIMALITY</th>\
+        <th>ROBUSTNESS</th>\
+        <th>SAFETY</th>\
+    </tr>\
+    <tr id="creator-row">\
+        <td class="doctor-head"></td>\
+        <td></td>\
+        <td></td>\
+        <td></td>\
+        <td></td>\
+        <td></td>\
+        <td></td>\
+        <td></td>\
+        <td></td>\
+        <td></td>\
+    </tr>\
+</table>\
+</div>'
