@@ -42,7 +42,26 @@
                 <textarea type="text" id="comment" style="width: 80%;"></textarea>
             </div>
         </div>
-        <div id="manage-team">
+        <div class="container s1" style="margin-top: 2rem;">
+                <div class = "flex-row">
+                        <form class = "col">
+    
+                           <div class = "row">
+                              <select class = "browser-default">
+                                 <option value = ""  selected>Select Doctor</option>
+                                 <option value = "1">Timmo</option>
+                                 <option value = "2">Anna</option>
+                                 <option value = "3">Marco</option>
+                              </select>
+    
+                            <button class="col s12 btn btn-small waves-effect indigo ">Add Co-Doctor</button>
+    
+                           </div>
+                        </form>  
+                        <p class="right-align">
+                        <a class="waves-effect waves-light btn-large indigo"><i class="material-icons right">accessibility_new</i>Ask for help</a>
+                        </p>           
+                </div>
         </div>
         <div id="review-table" style="width:90%;">
             <div class="carousel-content" id="carousel-content">
@@ -60,6 +79,7 @@
                             <th>OPTIMALITY</th>
                             <th>ROBUSTNESS</th>
                             <th>SAFETY</th>
+                            <th>FINAL CHOOSE</th>
                         </tr>
                         <tr id="creator-row">
                             <td class="doctor-head">Anna</td>
@@ -72,6 +92,7 @@
                             <td bgcolor="#99e699"></td>
                             <td bgcolor="#99e699"></td>
                             <td bgcolor="#99e699"></td>
+                            <td><input type="checkbox" name="" checked class="checkbox"/></td>
                         </tr>
                         <tr id="creator-row">
                             <td class="doctor-head">Timmo</td>
@@ -84,6 +105,7 @@
                             <td bgcolor="#e6e6e6"></td>
                             <td bgcolor="#e6e6e6"></td>
                             <td bgcolor="#e6e6e6"></td>
+                            <td bgcolor="#e6e6e6"><input type="checkbox" class="checkbox" readonly/>&nbsp;</td>
                         </tr>
                         <tr id="creator-row">
                             <td class="doctor-head">Marco</td>
@@ -92,6 +114,7 @@
                             <td bgcolor="#ffffff"></td>
                             <td bgcolor="#99e699"></td>
                             <td bgcolor="#99e699"></td>
+                            <td bgcolor="#ffffff"></td>
                             <td bgcolor="#ffffff"></td>
                             <td bgcolor="#ffffff"></td>
                             <td bgcolor="#ffffff"></td>
@@ -115,18 +138,20 @@
                             <th>OPTIMALITY</th>
                             <th>ROBUSTNESS</th>
                             <th>SAFETY</th>
+                            <th>FINAL CHOOSE</th>
                         </tr>
                         <tr id="creator-row">
                             <td class="doctor-head">Anna</td>
                             <td bgcolor="#ee6e73"></td>
-                            <td bgcolor="#99e699"></td>
-                            <td bgcolor="#ffff80"></td>
-                            <td bgcolor="#99e699"></td>
-                            <td bgcolor="#99e699"></td>
+                            <td bgcolor="#ee6e73"></td>
+                            <td bgcolor="#ee6e73"></td>
                             <td bgcolor="#99e699"></td>
                             <td bgcolor="#99e699"></td>
                             <td bgcolor="#99e699"></td>
                             <td bgcolor="#99e699"></td>
+                            <td bgcolor="#99e699"></td>
+                            <td bgcolor="#99e699"></td>
+                            <td ><input type="checkbox" name="" class="checkbox" />&nbsp;</td>
                         </tr>
                         <tr id="creator-row">
                             <td class="doctor-head">Timmo</td>
@@ -139,6 +164,7 @@
                             <td bgcolor="#e6e6e6"></td>
                             <td bgcolor="#e6e6e6"></td>
                             <td bgcolor="#e6e6e6"></td>
+                            <td bgcolor="#e6e6e6"><input type="checkbox" name="" class="checkbox" readonly/>&nbsp;</td>
                         </tr>
                         <tr id="creator-row">
                             <td class="doctor-head">Marco</td>
@@ -147,6 +173,7 @@
                             <td bgcolor="#ffffff"></td>
                             <td bgcolor="#99e699"></td>
                             <td bgcolor="#99e699"></td>
+                            <td bgcolor="#ffffff"></td>
                             <td bgcolor="#ffffff"></td>
                             <td bgcolor="#ffffff"></td>
                             <td bgcolor="#ffffff"></td>
