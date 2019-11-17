@@ -21,32 +21,59 @@
 
             <ul class="right">
                 <li><a href="#" id="right_top_id">Patient number: 12432</a></li>
-                <li><a href="#" id="right_top_plan_id">Plan number: 23423423</a></li>
             </ul>
 
         </div>
     </nav>
 
 
-    <!-- TABS -->  
-      <div class = "row">
+    <!-- TABS --> 
+    <div class = "row">
+            <div class = "col s12">
+               <ul class = "tabs blue lighten-2">
+                  <li class = "tab col "><a class="black-text" href = "#unread">JSu-IM105</a></li>
+                  <li class = "tab col"><a class="black-text" href = "#unread">JSu-IM103</a></li>
+               </ul>
+            </div>
+            
          <div class = "col s12">
-            <ul class = "tabs blue lighten-4">
-               <li class = "tab col active"><a class = "active indigo lighten-5" href = "#">ORGAN CONTOUR</a></li>
-               <li class = "tab col"><a href = "#unread">DOSE DEVIATION</a></li>
-               <li class = "tab col"><a href = "#outbox">GEOMETRIES DEVIATION</a></li>
-               <li class = "tab col"><a href = "#sent">MONITOR UNITS</a></li>
-               <li class = "tab col"><a href = "#sent">DOSE DISTRIBUTION</a></li>
-               <li class = "tab col"><a href = "#sent">CRITICAL ORGAN METRICS</a></li>
-               <li class = "tab col"><a href = "#sent">OPTIMALITY</a></li>
-               <li class = "tab col"><a href = "#sent">ROBUSTNESS</a></li>
-               <li class = "tab col"><a href = "#sent">SAFETY</a></li>
+            <ul class = "tabs blue lighten-4" id ="tasks_swipe">
+               <li class = "tab col active"><a onclick="organ_c('Organ countour')">ORGAN CONTOUR</a></li>
+               <li class = "tab col"><a onclick="organ_c('Dose deviation')">DOSE DEVIATION</a></li>
+               <li class = "tab col"><a onclick="organ_c('Geometries deviation')">GEOMETRIES DEVIATION</a></li>
+               <li class = "tab col"><a onclick="organ_c('Monitor units')">MONITOR UNITS</a></li>
+               <li class = "tab col"><a onclick="organ_c('Dose distribution')">DOSE DISTRIBUTION</a></li>
+               <li class = "tab col"><a onclick="organ_c('Critical organ metrics')">CRITICAL ORGAN METRICS</a></li>
+               <li class = "tab col"><a onclick="organ_c('Optimality')">OPTIMALITY</a></li>
+               <li class = "tab col"><a onclick="organ_c('Robustness')">ROBUSTNESS</a></li>
+               <li class = "tab col"><a onclick="organ_c('Safety')">SAFETY</a></li>
             </ul>
          </div>
          
       </div>
 
+<!-- section for displaying content -->
+<section id="content">
+</section>
 
-      <!-- code for  -->
+
+<script src="js/plan_editor.js"> </script>
+
 </body>
 </html>
+
+
+
+
+
+
+
+<!-- <ul id="tabs-swipe-demo" class="tabs">
+        <li class="tab col s3"><a href="#swipe-1">Test 1</a></li>
+        <li class="tab col s3"><a class="active" href="#swipe-2">Test 2</a></li>
+        <li class="tab col s3"><a href="#swipe-3">Test 3</a></li>
+</ul>
+      <div id="swipe-1" class="col s12 blue">First tab content</div>
+      <div id="swipe-2" class="col s12 red">Second tab content</div>
+      <div id="swipe-3" class="col s12 green">Third tab content</div> -->
+

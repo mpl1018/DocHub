@@ -17,7 +17,7 @@ var reviews = request_api(dochub_api+"reviews/doctor/2",null,"GET");
                   <p>Patient ID: ${reviews[review].patient_id}</p>
                 </div>
                 <div class="card-action">
-                  <a href="#" class="white-text" onclick="localStorage.setItem('currentReviewID', '${reviews[review].id}')">See review progress</a>
+                  <a href="review.html?id=2&active=true" class="white-text" onclick="localStorage.setItem('currentReviewID', '${reviews[review].id}')">See review progress</a>
                 </div>
               </div>
             </div>  
